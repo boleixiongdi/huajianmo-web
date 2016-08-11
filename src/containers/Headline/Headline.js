@@ -48,14 +48,14 @@ export default class Headline extends Component {
     return (
       <div className={styles.widgets + ' container'}>
         <h1>
-          Widgets
+          美食头条
           <button className={styles.refreshBtn + ' btn btn-success'} onClick={load}>
-            <i className={refreshClassName}/> {' '} Reload Widgets
+            <i className={refreshClassName}/> {' '} 刷新
           </button>
         </h1>
-        <Helmet title="Headline"/>
+        <Helmet title="美食头条"/>
         <p>
-          If you hit refresh on your browser, the data loading will take place on the server before the page is returned.
+          我们会推荐当天的上市的美食，还有用户上传的最新的漂亮风景 the data loading will take place on the server before the page is returned.
           If you navigated here from another page, the data was fetched from the client after the route transition.
           This uses the decorator method <code>@asyncConnect</code> with the <code>deferred: true</code> flag. To block
           a route transition until some data is loaded, remove the <code>deffered: true</code> flag.

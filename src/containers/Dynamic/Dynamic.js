@@ -7,7 +7,7 @@ import {SurveyForm} from 'components';
 @connect(
   () => ({}),
   {initialize})
-export default class Survey extends Component {
+export default class Dynamic extends Component {
   static propTypes = {
     initialize: PropTypes.func.isRequired
   }
@@ -30,8 +30,8 @@ export default class Survey extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Survey</h1>
-        <Helmet title="Survey"/>
+        <h1>广场动态</h1>
+        <Helmet title="广场动态"/>
 
         <p>
           This is an example of a form in redux in which all the state is kept within the redux store.

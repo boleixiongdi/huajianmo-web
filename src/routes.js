@@ -5,11 +5,11 @@ import {
     App,
     Chat,
     Home,
-    Widgets,
+    Discovered,
     About,
     Login,
     LoginSuccess,
-    Survey,
+    Dynamic,
     NotFound,
     Headline,
     My,
@@ -51,8 +51,8 @@ export default (store) => {
       <Route path="home" component={Home}/>
       <Route path="about" component={About}/>
       <Route path="login" component={Login}/>
-      <Route path="dynamic" component={Survey}/>
-      <Route path="discovered" component={Widgets}/>
+      <Route path="dynamic" component={Dynamic}/>
+      <Route path="discovered" component={Discovered}/>
       <Route path="headline" component={Headline}/>
       <Route path="my" component={My}/>
       { /* Catch all route */ }

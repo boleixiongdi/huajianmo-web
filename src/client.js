@@ -21,6 +21,7 @@ const dest = document.getElementById('content');
 const store = createStore(_browserHistory, client, window.__data);
 const history = syncHistoryWithStore(_browserHistory, store);
 
+/* 返回一个全局的socket对象 */
 function initSocket() {
   const socket = io('', {path: '/ws'});
   socket.on('news', (data) => {

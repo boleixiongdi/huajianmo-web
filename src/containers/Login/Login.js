@@ -12,7 +12,11 @@ export default class Login extends Component {
     login: PropTypes.func,
     logout: PropTypes.func
   }
-
+  /*
+   * 提交登录后在 app.js 的componentWillReceiveProps方法中判断状态
+   * componentWillReceiveProps
+   * 在组件接收到新的 props 的时候调用。在初始化渲染的时候，该方法不会调用
+  */
   handleSubmit = (event) => {
     event.preventDefault();
     const input = this.refs.username;
